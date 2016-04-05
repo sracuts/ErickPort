@@ -1,0 +1,104 @@
+$headerColorblue:#003366;
+$headerbackg:#f2f2f2;
+//______________________________________________________________________________
+header {
+  width:99.5vw;
+  height:10vh;
+  background-color: $headerbackg;
+}
+.logo{width:40vw; float:left; margin:auto;}
+.logo img {
+  float:left;
+  width:10vh;
+  height:8vh;
+  border-radius: 50%;
+  padding:.5em .5em .5em 1em;
+}
+.logo strong, em{
+    position: relative;
+    top:2vh;
+    color:$headerColorblue;
+}
+.logo strong{ // Erick Rodrigues
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.7em;
+  padding:0 0 0 1em;
+}
+.logo em{ // Front end Dev
+  opacity: 0.5;
+  font-family: 'Slabo', serif;
+  font-size: 1.2em;
+  padding:0em 0em 0em 4.3em;
+}
+footer .nav-container {display: none;}
+.nav-container li {float:right;list-style: none; display:inline-block;}
+.main-menu{float: left}
+.main-menu li{
+  position: relative;
+  left:-5em;
+  display: inline-block;
+  height:8vh;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2em;
+  color:$headerColorblue;
+  opacity: 0.5;
+  padding:.05em 1em 0 1em;
+  margin:auto;
+  list-style: none;
+}
+.main-menu li a{padding: .5em 0 0.7em 0;}
+.main-menu a{text-decoration: none;}
+.main-menu a:link{color:$headerColorblue;}
+.main-menu a:visited{color:$headerColorblue;}
+.main-menu a:hover{border-radius:.3em; border-bottom: .1em double #000;}
+
+
+.social{}
+.social img {width:5vh; height:5vh;padding: 2.5vh .5vw 2.5vh .5vw;}
+.social a:hover{opacity: .2;}
+
+@media (max-width: 450px){
+.logo{width:100%; float:left; margin:auto;}
+.logo img {
+  float:left;
+  width:10vh;
+  height:8vh;
+  border-radius: 50%;
+  padding:.5em .5em .5em 1em;
+}
+.logo strong, em{
+    position: relative;
+    top:1vh;
+    color:$headerColorblue;
+}
+.logo strong{ // Erick Rodrigues
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3em;
+  padding:0 0 0 0;
+}
+.logo em{ // Front end Dev
+  opacity: 0.5;
+  font-family: 'Slabo', serif;
+  font-size: 1.2em;
+  padding:0em 0em 0em 2.5em;
+}
+
+header .nav-container{ display:none;}
+.fixfooter{height:8vh;}
+footer {position: fixed; width:100vw; margin:0; padding:0; bottom:0; background-color: $headerbackg;}
+footer .nav-container{display: inline;}
+footer .main-menu {float:left; width:70vw; height: 4vh; margin:0; padding:1em 0; bottom:0; overflow: hidden;}
+footer .main-menu li{
+  position: relative;
+  top:.3em;
+  left:0;
+  height:2vh;
+  font-family: 'Nunito', sans-serif;
+  font-size: .8em;
+  padding:0 .5em 0 .5em;
+  margin:0;
+  list-style: none;
+}
+footer .social{float:right; width:19vw; height:4vh; margin:0; padding:1em .5em; bottom:0;}
+footer .social img {width:7.5vw; height:4vh;padding: 0 1vw 0 1vw;}
+}
